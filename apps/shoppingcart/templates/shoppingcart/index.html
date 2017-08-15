@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Amadon Index </title>
+		</head>
+		<body>
+			<h1> The Ghetto Amazon </h1>
+			<table>
+				<tr>
+					<th> Item </th>
+					<th> Price </th>
+					<th> Purchase </th>
+				</tr>
+				<tr>
+					<td> Dojo Shirt </td>
+					<td> $19.99 </td>
+					<td>
+						<form action='/buy' method='post'>
+							{% csrf_token %}
+							<select name='quantity'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<input type='hidden' name='product_id' value='1'>
+							<input type='submit' value='Buy!' />
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td> Dojo Sweatshirt </td>
+					<td> $29.99 </td>
+					<td>
+						<form action='/buy' method='post'>
+							{% csrf_token %}
+							<select name='quantity'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<input type='hidden' name='product_id' value='2' />
+							<input type='submit' value='Buy!'>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td> Dojo Ping Pong Paddle </td>
+					<td> $99.99 </td>
+					<td>
+						<form action='/buy' method='post'>
+							{% csrf_token %}
+							<select name='quantity'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<input type='hidden' name='product_id' value='3' />
+							<input type='submit' value='Buy!'>
+						</form>
+					</td>					
+				</tr>
+				<tr>
+					<td> Dojo Ping Pong Balls </td>
+					<td> $9.99 </td>
+					<td>
+						<form action='/buy' method='post'>
+							{% csrf_token %}
+							<select name='quantity'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<input type='hidden' name='product_id' value='4' />
+							<input type='submit' value='Buy!'>
+						</form>
+					</td>					
+				</tr>
+			</table>
+		</body>
+	</html>
+
+
+
+
+
+
+
